@@ -1,8 +1,8 @@
 public class Avia {
     public static void main(String[] args) {
-        int price = 1000;
-        int mile = 20;
-        int bonus = price / mile;
-        System.out.println("Бонусные мили: " + bonus);
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
     }
 }
